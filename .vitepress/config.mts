@@ -15,7 +15,9 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Introduction', link: '/intro' },
-      { text: 'Getting started', link: '/install' }
+      { text: 'Getting started', link: '/install' },
+      { text: 'PowerShell Gallery', link: 'https://www.powershellgallery.com/packages/VcRedist/' },
+      { text: 'Change log', link: '/changelog' }
     ],
 
     logo: '/vcredist.png',
@@ -37,7 +39,6 @@ export default defineConfig({
           { text: 'Download the Redistributables', link: '/save-vcredist' },
           { text: 'Export the Manifest', link: '/export-vcmanifest' },
           { text: 'Known issues', link: '/issues' },
-          { text: 'Changelog', link: '/changelog' },
           { text: 'VcRedist versioning', link: '/versioning' }
         ]
       },

@@ -31,7 +31,7 @@ Get-VcList | Save-VcRedist -Path C:\Temp\VcRedist
 
 Redistributables are downloaded into the target folder:
 
-![Microsoft Visual C++ Redistributables installed on the local PC](assets/images/vcredist-folder.png)
+![Microsoft Visual C++ Redistributables installed on the local PC](/assets/images/vcredist-folder.png)
 
 Pass the list of `2013` and `2019` x86 supported Visual C++ Redistributables to Save-VcRedist and downloads the Redistributables to C:\Redist.
 

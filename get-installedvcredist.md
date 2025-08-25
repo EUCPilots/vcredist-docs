@@ -36,7 +36,7 @@ Output can be filtered for specific properties:
 Get-InstalledVcRedist | Select Name, Version, ProductCode
 ```
 
-![Microsoft Visual C++ Redistributables installed on the local PC](assets/images/installed-vcredist.png)
+![Microsoft Visual C++ Redistributables installed on the local PC](/assets/images/installed-vcredist.png)
 
 This list won't include the Additional and Minimum Runtimes by default. These can be returned with the `-ExportAll` switch:
 

@@ -31,11 +31,11 @@ Import-VcMdtApplication -VcList $VcList -MdtPath \\server\deployment
 
 Each Redistributable will be imported into the deployment share with application properties required for a successful deployment.
 
-![Microsoft Visual C++ Redistributables applications imported into an MDT share](assets/images/mdtvisualcapplications.png)
+![Microsoft Visual C++ Redistributables applications imported into an MDT share](/assets/images/mdtvisualcapplications.png)
 
 The folder structure in the deployment share, will look thus:
 
-![Visual C++ Redistributables in the deployment share Application folder](assets/images/mdtvisualcapplicationsfolder.png)
+![Visual C++ Redistributables in the deployment share Application folder](/assets/images/mdtvisualcapplicationsfolder.png)
 
 The install command line arguments used by default are passive. Fully silent install command line arguments can be specified with the `-Silent` parameter when importing the applications into an MDT deployment share.
 

@@ -9,6 +9,8 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://vcredist.com/'
   },
+  cleanUrls: true,
+  ignoreDeadLinks: true,
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

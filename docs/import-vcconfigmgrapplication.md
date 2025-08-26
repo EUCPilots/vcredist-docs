@@ -1,6 +1,6 @@
 # Import Redistributables into ConfigMgr
 
-To install the Visual C++ Redistributables with Microsoft Endpoint Configuration Manager, use `Import-VcConfigMgrApplication` to import each of the Visual C++ Redistributables as a separate application that includes the application and a single deployment type.
+To install the Visual C++ Redistributables with Microsoft Configuration Manager, use `Import-VcConfigMgrApplication` to import each of the Visual C++ Redistributables as a separate application that includes the application and a single deployment type.
 
 Visual C++ Redistributables can be filtered for release and processor architecture by `Get-VcList` before passing to `Save-VcRedist` and `Import-VcConfigMgrApplication`. The output from `Save-VcRedist` is required, because it includes the `Path` property that is populated with the path to each installer.
 

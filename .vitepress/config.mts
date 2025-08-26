@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  srcDir: './docs',
   title: "VcRedist",
   description: "A PowerShell module for lifecycle management of the Microsoft Visual C++ Redistributables.",
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
@@ -10,7 +11,7 @@ export default defineConfig({
     hostname: 'https://vcredist.com/'
   },
   cleanUrls: true,
-  ignoreDeadLinks: true,
+  // ignoreDeadLinks: true,
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -22,7 +23,7 @@ export default defineConfig({
       { text: 'Change log', link: '/changelog' }
     ],
 
-    logo: '/vcredist.png',
+    logo: '/assets/img/vcredist.png',
     search: {
       provider: 'local'
     },

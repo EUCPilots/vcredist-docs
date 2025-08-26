@@ -37,4 +37,4 @@ Fully silent install command line arguments can be specified with the `-Silent` 
 Install-VcRedist -VcList (Get-VcList | Save-VcRedist -Path C:\Temp\VcRedist) -Silent
 ```
 
-![Microsoft Visual C++ Redistributables installed on the local PC](/assets/images/visualcprograms.png)
+![Microsoft Visual C++ Redistributables installed on the local PC](/images/visualcprograms.png)

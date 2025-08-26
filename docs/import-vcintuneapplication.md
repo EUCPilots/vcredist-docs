@@ -65,7 +65,7 @@ The function will validate these properties and throw if any are missing.
 
 An Entra ID app registration can be used for non-interactive authentication. The app registration requires the **DeviceManagementApps.ReadWrite.All** application permission. Create an app registration, assign the permission and enable admin consent. Then use a client secret or client certificate to use with authentication.
 
-![Entra ID app registration for IntuneWin32App](/assets/images/appregistration.jpeg)
+![Entra ID app registration for IntuneWin32App](/images/appregistration.jpeg)
 
 For a non-interactive sign-in that uses the app registration and a client secret, use this example:
 
@@ -82,7 +82,7 @@ $VcList = Get-VcList -Release "2022" | Save-VcRedist -Path C:\Temp\VcRedist
 Import-VcIntuneApplication -VcList $VcList
 ```
 
-![Microsoft Visual C++ Redistributables applications imported into Intune](/assets/images/intuneapp.jpeg)
+![Microsoft Visual C++ Redistributables applications imported into Intune](/images/intuneapp.jpeg)
 
 ## Application Assignments and Supersedence
 

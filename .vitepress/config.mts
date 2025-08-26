@@ -23,7 +23,7 @@ export default defineConfig({
       { text: 'Change log', link: '/changelog' }
     ],
 
-    logo: '/assets/img/vcredist.png',
+    logo: '/img/vcredist.png',
     search: {
       provider: 'local'
     },

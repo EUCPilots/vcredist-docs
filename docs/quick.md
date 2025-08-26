@@ -43,4 +43,4 @@ Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.30.30704 2022    x86  
 
 Once the command is complete, you should see the Visual C++ Redistributables installed on your local system, looking similar to this:
 
-![Microsoft Visual C++ Redistributables installed on the local PC](/assets/images/installed2022.png)
+![Microsoft Visual C++ Redistributables installed on the local PC](/images/installed2022.png)

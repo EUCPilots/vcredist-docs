@@ -54,7 +54,7 @@
 
 ## 4.1.498
 
-* Moves the `2012` and `2013` releases to the Unsupported Redistributables list, see [Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-au/cpp/windows/latest-supported-vc-redist?view=msvc-170) for information on supported releases
+* <Badge type="warning" text="Breaking change" /> Moves the `2012` and `2013` releases to the Unsupported Redistributables list, see [Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-au/cpp/windows/latest-supported-vc-redist?view=msvc-170) for information on supported releases
 * Adds the `ARM64` architecture to the `2022` release
 * Fixes an issue with the output from internal function `New-MdtDrive`
 
@@ -72,7 +72,7 @@
 
 ## 4.1.494
 
-* Fix an issue where Redistributables imported into MDT do not install #144 
+* Fix an issue where Redistributables imported into MDT do not install
 * Fix an issue when importing the Redistributables into an MDT deployment share 
 * Update Redistributables `2019` to `14.29.30153.0`
 * Update Redistributables `2022` to `14.38.33130.0`
@@ -87,8 +87,8 @@
 
 ## 4.1.480
 
-* Updates `Install-VcRedist`, `Import-VcConfigMgrApplication`, `Import-VcMdtApplication`, and `Import-VcIntuneApplication` to use the output from `Save-VcRedist`, removing the need for the `-Path` parameter [#123](https://github.com/aaronparker/vcredist/discussions/123)
-* Removes the following Redistributables from the manifest as they are no longer available for download from Microsoft [#114](https://github.com/aaronparker/vcredist/issues/114):
+* <Badge type="warning" text="Breaking change" /> Updates `Install-VcRedist`, `Import-VcConfigMgrApplication`, `Import-VcMdtApplication`, and `Import-VcIntuneApplication` to use the output from `Save-VcRedist`, removing the need for the `-Path` parameter [#123](https://github.com/aaronparker/vcredist/discussions/123)
+* <Badge type="warning" text="Breaking change" /> Removes the following Redistributables from the manifest as they are no longer available for download from Microsoft [#114](https://github.com/aaronparker/vcredist/issues/114):
 
     * Visual C++ 2005 SP1 Redistributable Package 8.0.56336
     * Visual C++ 2005 SP1 Redistributable Package 8.0.50727.42

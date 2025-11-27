@@ -75,10 +75,10 @@ Connect-MSIntuneGraph -TenantID contoso.onmicrosoft.com -ClientId "f99877d5-f757
 
 ## Example: Import Redistributables
 
-The following example retrieves the list of Visual C++ Redistributables for the 2022 release, downloads the installers, and imports each as a Win32 app into Intune:
+The following example retrieves the list of Visual C++ Redistributables for the 14 release, downloads the installers, and imports each as a Win32 app into Intune:
 
 ```powershell
-$VcList = Get-VcList -Release "2022" | Save-VcRedist -Path C:\Temp\VcRedist
+$VcList = Get-VcList -Release "14" | Save-VcRedist -Path C:\Temp\VcRedist
 Import-VcIntuneApplication -VcList $VcList
 ```
 

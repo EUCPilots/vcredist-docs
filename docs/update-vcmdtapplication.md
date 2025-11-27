@@ -22,7 +22,7 @@ Visual C++ Redistributables can be filtered for release and processor architectu
 
 ## Examples
 
-Update the `2012`, `2013` and `2022` supported Redistributables in an MDT deployment share with the fully silent install command line:
+Update the `2012`, `2013` and `14` Redistributables in an MDT deployment share with the fully silent install command line:
 
 ```powershell
 $VcList = Get-VcList | Save-VcRedist -Path C:\Temp\VcRedist

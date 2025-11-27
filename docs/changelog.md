@@ -1,9 +1,15 @@
 # Changelog
 
+## 4.1.526
+
+* Updates 2022 Visual C++ Redistributables to latest v14
+* Changes `2022` release property to `14` to reflect latest version
+* Updates module icon to new Visual Studio 2026 icon
+
 ## 4.1.523
 
-* Fixes x64 Redistributable Architecture detection fallback
-* Adds ARM64 Redistributable Architecture detection fallback
+* Fixes `x64` Redistributable Architecture detection fallback
+* Adds `ARM64` Redistributable Architecture detection fallback
   
 ## 4.1.522
 

@@ -22,7 +22,7 @@ Visual C++ Redistributables can be filtered for release and processor architectu
 
 ## Examples
 
-Import the `2012`, `2013` and `2022` supported Redistributables into an MDT deployment share:
+Import the `2012`, `2013` and `14` supported Redistributables into an MDT deployment share:
 
 ```powershell
 $VcList = Get-VcList | Save-VcRedist -Path C:\Temp\VcRedist

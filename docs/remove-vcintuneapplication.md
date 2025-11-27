@@ -23,7 +23,7 @@
 
 ```powershell
 # Get the list of redistributables you want to remove
-$VcList = Get-VcList -Release "2022" | Save-VcRedist -Path C:\Temp\VcRedist
+$VcList = Get-VcList -Release "14" | Save-VcRedist -Path C:\Temp\VcRedist
 
 # Remove the corresponding Intune applications
 Remove-VcIntuneApplication -VcList $VcList -Verbose -Confirm:$false

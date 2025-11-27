@@ -24,21 +24,15 @@ You should see output similar to the following:
 
 ```powershell
 Checking whether module is installed: VcRedist.
-Installing module: VcRedist 3.0.307.
-Saving VcRedists to path: C:\Users\aaron\AppData\Local\Temp\VcRedist.
-Downloading supported Microsoft Visual C++ Redistributables.
-Installing supported Microsoft Visual C++ Redistributables.
-Install complete.
+Installing module: VcRedist 4.1.522.
+Saving VcRedists to path: C:\Users\Aaron\AppData\Local\Temp\VcRedist.
+Downloading and installing supported Microsoft Visual C++ Redistributables.
 Installed Visual C++ Redistributables:
 
 Name                                                               Release Architecture Version
 ----                                                               ------- ------------ -------
-Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030       2012    x64          11.0.61030.0
-Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030       2012    x86          11.0.61030.0
-Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664       2013    x64          12.0.40664.0
-Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40664       2013    x86          12.0.40664.0
-Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.30.30704 2022    x64          14.30.30704.0
-Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.30.30704 2022    x86          14.30.30704.0
+Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.44.35211 2022    x86          14.44.35211.0
+Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.44.35211 2022    x64          14.44.35211.0
 ```
 
 Once the command is complete, you should see the Visual C++ Redistributables installed on your local system, looking similar to this:

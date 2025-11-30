@@ -3,7 +3,7 @@
 ## 4.1.526
 
 * Updates 2022 Visual C++ Redistributables to latest v14
-* <Badge type="warning" text="Breaking change" /> Changes `2022` release property to `14` to reflect latest version
+* <Badge type="danger" text="Breaking change" /> Changes `2022` release property to `14` to reflect latest version
 * Updates module icon to new Visual Studio 2026 icon
 
 ## 4.1.523
@@ -54,7 +54,7 @@
 
 ## 4.1.498
 
-* <Badge type="warning" text="Breaking change" /> Moves the `2012` and `2013` releases to the Unsupported Redistributables list, see [Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-au/cpp/windows/latest-supported-vc-redist?view=msvc-170) for information on supported releases
+* <Badge type="danger" text="Breaking change" /> Moves the `2012` and `2013` releases to the Unsupported Redistributables list, see [Microsoft Visual C++ Redistributable latest supported downloads](https://learn.microsoft.com/en-au/cpp/windows/latest-supported-vc-redist?view=msvc-170) for information on supported releases
 * Adds the `ARM64` architecture to the `2022` release
 * Fixes an issue with the output from internal function `New-MdtDrive`
 
@@ -87,8 +87,8 @@
 
 ## 4.1.480
 
-* <Badge type="warning" text="Breaking change" /> Updates `Install-VcRedist`, `Import-VcConfigMgrApplication`, `Import-VcMdtApplication`, and `Import-VcIntuneApplication` to use the output from `Save-VcRedist`, removing the need for the `-Path` parameter [#123](https://github.com/aaronparker/vcredist/discussions/123)
-* <Badge type="warning" text="Breaking change" /> Removes the following Redistributables from the manifest as they are no longer available for download from Microsoft [#114](https://github.com/aaronparker/vcredist/issues/114):
+* <Badge type="danger" text="Breaking change" /> Updates `Install-VcRedist`, `Import-VcConfigMgrApplication`, `Import-VcMdtApplication`, and `Import-VcIntuneApplication` to use the output from `Save-VcRedist`, removing the need for the `-Path` parameter [#123](https://github.com/aaronparker/vcredist/discussions/123)
+* <Badge type="danger" text="Breaking change" /> Removes the following Redistributables from the manifest as they are no longer available for download from Microsoft [#114](https://github.com/aaronparker/vcredist/issues/114):
 
     * Visual C++ 2005 SP1 Redistributable Package 8.0.56336
     * Visual C++ 2005 SP1 Redistributable Package 8.0.50727.42

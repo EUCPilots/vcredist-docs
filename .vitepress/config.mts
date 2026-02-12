@@ -110,7 +110,7 @@ export default defineConfig({
 
     footer: {
       message: 'A stealthpuppy project.',
-      copyright: 'Copyright &copy; 2025 Aaron Parker.'
+      copyright: 'Copyright &copy; 2026 Aaron Parker.'
     },
 
     editLink: {

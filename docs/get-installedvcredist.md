@@ -6,36 +6,36 @@ Running the `Get-InstalledVcRedist` command returns the list of installed Redist
 
 ```powershell
 Publisher            : Microsoft Corporation
-Name                 : Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.44.35211
-Version              : 14.44.35211.0
-ProductCode          : {0b5169e3-39da-4313-808e-1f9c0407f3bf}
-BundleCachePath      : C:\ProgramData\Package Cache\{0b5169e3-39da-4313-808e-1f9c0407f3bf}\VC_redist.x86.exe
+Name                 : Visual C++ v14 Redistributable (x86)
+Version              : 14.50.35719.0
+ProductCode          : {0e4ccf1b-d073-4cfe-8a24-e86185719b56}
+BundleCachePath      : C:\ProgramData\Package Cache\{0e4ccf1b-d073-4cfe-8a24-e86185719b56}\vc_redist.x86.exe
 Architecture         : x86
-Release              : 2022
-UninstallString      : "C:\ProgramData\Package Cache\{0b5169e3-39da-4313-808e-1f9c0407f3bf}\VC_redist.x86.exe"  /uninstall
-QuietUninstallString : "C:\ProgramData\Package Cache\{0b5169e3-39da-4313-808e-1f9c0407f3bf}\VC_redist.x86.exe" /uninstall /quiet
+Release              : 14
+UninstallString      : "C:\ProgramData\Package Cache\{0e4ccf1b-d073-4cfe-8a24-e86185719b56}\vc_redist.x86.exe"  /uninstall
+QuietUninstallString : "C:\ProgramData\Package Cache\{0e4ccf1b-d073-4cfe-8a24-e86185719b56}\vc_redist.x86.exe" /uninstall /quiet
 UninstallKey         : HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall
 
 Publisher            : Microsoft Corporation
-Name                 : Microsoft Visual C++ 2022 Redistributable (Arm64) - 14.44.35211
-Version              : 14.44.35211.0
-ProductCode          : {a87e42cd-475d-4f15-8848-e0d60c63c02f}
-BundleCachePath      : C:\ProgramData\Package Cache\{a87e42cd-475d-4f15-8848-e0d60c63c02f}\VC_redist.arm64.exe
+Name                 : Visual C++ v14 Redistributable (Arm64)
+Version              : 14.50.35719.0
+ProductCode          : {a111f0a4-679e-43e6-bdfe-25e176541c72}
+BundleCachePath      : C:\ProgramData\Package Cache\{a111f0a4-679e-43e6-bdfe-25e176541c72}\vc_redist.arm64.exe
 Architecture         : ARM64
-Release              : 2022
-UninstallString      : "C:\ProgramData\Package Cache\{a87e42cd-475d-4f15-8848-e0d60c63c02f}\VC_redist.arm64.exe"  /uninstall
-QuietUninstallString : "C:\ProgramData\Package Cache\{a87e42cd-475d-4f15-8848-e0d60c63c02f}\VC_redist.arm64.exe" /uninstall /quiet
+Release              : 14
+UninstallString      : "C:\ProgramData\Package Cache\{a111f0a4-679e-43e6-bdfe-25e176541c72}\vc_redist.arm64.exe"  /uninstall
+QuietUninstallString : "C:\ProgramData\Package Cache\{a111f0a4-679e-43e6-bdfe-25e176541c72}\vc_redist.arm64.exe" /uninstall /quiet
 UninstallKey         : HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall
 
 Publisher            : Microsoft Corporation
-Name                 : Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.44.35211
-Version              : 14.44.35211.0
-ProductCode          : {d8bbe9f9-7c5b-42c6-b715-9ee898a2e515}
-BundleCachePath      : C:\ProgramData\Package Cache\{d8bbe9f9-7c5b-42c6-b715-9ee898a2e515}\VC_redist.x64.exe
+Name                 : Visual C++ v14 Redistributable (x64)
+Version              : 14.50.35719.0
+ProductCode          : {91ee571b-0e8a-4c65-9eaf-2e2f5fc60c00}
+BundleCachePath      : C:\ProgramData\Package Cache\{91ee571b-0e8a-4c65-9eaf-2e2f5fc60c00}\vc_redist.x64.exe
 Architecture         : x64
-Release              : 2022
-UninstallString      : "C:\ProgramData\Package Cache\{d8bbe9f9-7c5b-42c6-b715-9ee898a2e515}\VC_redist.x64.exe"  /uninstall
-QuietUninstallString : "C:\ProgramData\Package Cache\{d8bbe9f9-7c5b-42c6-b715-9ee898a2e515}\VC_redist.x64.exe" /uninstall /quiet
+Release              : 14
+UninstallString      : "C:\ProgramData\Package Cache\{91ee571b-0e8a-4c65-9eaf-2e2f5fc60c00}\vc_redist.x64.exe"  /uninstall
+QuietUninstallString : "C:\ProgramData\Package Cache\{91ee571b-0e8a-4c65-9eaf-2e2f5fc60c00}\vc_redist.x64.exe" /uninstall /quiet
 UninstallKey         : HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall
 ```
 

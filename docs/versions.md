@@ -1,6 +1,8 @@
-﻿# Included Redistributables
+# Included Redistributables
 
-VcRedist <Badge type="tip" text="4.1.506" /> includes the following Redistributables (supported and unsupported):
+VcRedist <Badge type="tip" text="4.1.526" /> includes the following Redistributables (supported and unsupported):
+
+## Supported Redistributables
 
 | Version        | Architecture | Name                                                                       |
 | -------------- | ------------ | -------------------------------------------------------------------------- |
@@ -13,6 +15,11 @@ VcRedist <Badge type="tip" text="4.1.506" /> includes the following Redistributa
 | 14.16.27052.0  | x86          | Visual C++ Redistributable for Visual Studio 2017                          |
 | 14.0.24215.1   | x64          | Visual C++ 2015 Redistributable Update 3                                   |
 | 14.0.24215.1   | x86          | Visual C++ 2015 Redistributable Update 3                                   |
+
+## Unsupported Redistributables
+
+| Version        | Architecture | Name                                                                       |
+| -------------- | ------------ | -------------------------------------------------------------------------- |
 | 12.0.40664.0   | x64          | Visual C++ 2013 Update 5 Redistributable Package                           |
 | 12.0.40664.0   | x86          | Visual C++ 2013 Update 5 Redistributable Package                           |
 | 12.0.30501.0   | x64          | Visual C++ Redistributable Packages for Visual Studio 2013                 |

@@ -81,29 +81,16 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Module help',
-        collapsed: true,
+        text: 'Other',
+        collapsed: false,
         items: [
-          { text: 'about_VcRedist', link: '/help/en-US/about_VcRedist' },
-          { text: 'Get-VcList', link: '/help/en-US/Get-VcList' },
-          { text: 'Save-VcRedist', link: '/help/en-US/Save-VcRedist' },
-          { text: 'Export-VcManifest', link: '/help/en-US/Export-VcManifest' },
-          { text: 'Get-InstalledVcRedist', link: '/help/en-US/Get-InstalledVcRedist' },
-          { text: 'Import-VcConfigMgrApplication', link: '/help/en-US/Import-VcConfigMgrApplication' },
-          { text: 'Import-VcMdtApplication', link: '/help/en-US/Import-VcMdtApplication' },
-          { text: 'Import-VcIntuneApplication', link: '/help/en-US/Import-VcIntuneApplication' },
-          { text: 'Install-VcRedist', link: '/help/en-US/Install-VcRedist' },
-          { text: 'New-VcMdtBundle', link: '/help/en-US/New-VcMdtBundle' },
-          { text: 'Uninstall-VcRedist', link: '/help/en-US/Uninstall-VcRedist' },
-          { text: 'Update-VcMdtApplication', link: '/help/en-US/Update-VcMdtApplication' },
-          { text: 'Update-VcMdtBundle', link: '/help/en-US/Update-VcMdtBundle' },
-          { text: 'Test-VcListUri', link: '/help/en-US/Test-VcListUri' }
+          { text: 'Test Redistributable URIs', link: '/test-vcredisturi' }
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/eucpilots/evergreen' },
+      { icon: 'github', link: 'https://github.com/eucpilots/vcredist' },
       { icon: 'bluesky', link: 'https://bsky.app/profile/stealthpuppy.com' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/aaronedwardparker/' },
     ],
@@ -114,7 +101,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/EUCPilots/vcredist-docs/edit/main/:path'
+      pattern: 'https://github.com/EUCPilots/vcredist-docs/edit/main/docs/:path'
     }
   }
 })

@@ -17,8 +17,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Introduction', link: '/intro' },
-      { text: 'Getting started', link: '/install' },
+      { text: 'Getting started', link: '/intro' },
       { text: 'PowerShell Gallery', link: 'https://www.powershellgallery.com/packages/VcRedist/' },
       { text: 'Change log', link: '/changelog' }
     ],

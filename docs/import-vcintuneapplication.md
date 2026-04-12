@@ -1,4 +1,3 @@
-
 # Import Redistributables into Microsoft Intune
 
 `Import-VcIntuneApplication` automates packaging and importing Visual C++ Redistributables as Win32 applications into Microsoft Intune. Each redistributable is packaged, assigned detection and requirement rules, and imported as a separate application.
@@ -15,41 +14,9 @@
 > - Authenticate to Intune with `Connect-MSIntuneGraph` before use
 > - Requires a valid Microsoft Graph API access token
 
-## Initial Setup
-
-To import the Visual C++ Redistributables into Microsoft Intune, some initial setup is required - first, install the required modules from the PowerShell Gallery:
-
-```powershell
-Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-Install-Module -Name VcRedist, IntuneWin32App, MSAL.PS
-```
-
 ## Parameters
 
 - `VcList` (**required**): An array of Visual C++ Redistributable objects, typically from `Save-VcRedist`. Each object must have required properties (see below).
-
-## Prerequisites
-
-1. **Install required modules:**
-
-   ```powershell
-   Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-   Install-Module -Name VcRedist, IntuneWin32App, MSAL.PS
-   ```
-
-2. **Authenticate to Intune:**
-
-   ```powershell
-   Connect-MSIntuneGraph -TenantID contoso.onmicrosoft.com
-   ```
-
-   For non-interactive authentication, use an Entra ID app registration with `DeviceManagementApps.ReadWrite.All` permission:
-
-   ```powershell
-   Connect-MSIntuneGraph -TenantID contoso.onmicrosoft.com -ClientId "<appId>" -ClientSecret <secret>
-   ```
-
-3. **Ensure the IntuneWin32App module is available and a valid Microsoft Graph API access token is present.**
 
 ## Required VcList Properties
 
@@ -58,20 +25,6 @@ Each object in `VcList` must include:
 - `Name`, `Version`, `Path`, `Architecture`, `SilentInstall`, `SilentUninstall`, `PackageId`, `URI`, and other properties as produced by `Save-VcRedist`.
 
 The function will validate these properties and throw if any are missing.
-
-## Authentication
-
-### Non-interactive Authentication
-
-An Entra ID app registration can be used for non-interactive authentication. The app registration requires the **DeviceManagementApps.ReadWrite.All** application permission. Create an app registration, assign the permission and enable admin consent. Then use a client secret or client certificate to use with authentication.
-
-![Entra ID app registration for IntuneWin32App](/images/appregistration.jpeg)
-
-For a non-interactive sign-in that uses the app registration and a client secret, use this example:
-
-```powershell
-Connect-MSIntuneGraph -TenantID contoso.onmicrosoft.com -ClientId "f99877d5-f757-438e-b12b-d905b00ea6f3" -ClientSecret <secret>
-```
 
 ## Example: Import Redistributables
 
@@ -84,7 +37,7 @@ Import-VcIntuneApplication -VcList $VcList
 
 ![Microsoft Visual C++ Redistributables applications imported into Intune](/images/intuneapp.jpeg)
 
-## Application Assignments and Supersedence
+## Assignments and Supersedence
 
 After import, assign the applications using `Add-IntuneWin32AppAssignmentAllDevices`. The function returns application objects with an `Id` property:
 

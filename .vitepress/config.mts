@@ -57,6 +57,7 @@ export default defineConfig({
         text: 'Intune',
         collapsed: false,
         items: [
+          { text: 'Authenticating to Intune', link: '/intune-setup' },
           { text: 'Import Redistributables into Intune', link: '/import-vcintuneapplication' },
           { text: 'Query Intune for Redistributables', link: '/get-vcintuneapplication' },
           { text: 'Remove Redistributables from Intune', link: '/remove-vcintuneapplication' }

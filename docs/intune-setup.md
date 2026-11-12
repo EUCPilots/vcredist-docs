@@ -18,28 +18,30 @@ Install-Module -Name VcRedist, IntuneWin32App, MSAL.PS
 
 2. **Authenticate to Intune:**
 
-   ```powershell
-   Connect-MSIntuneGraph -TenantID contoso.onmicrosoft.com
-   ```
-
-   For non-interactive authentication, use an Entra ID app registration with `DeviceManagementApps.ReadWrite.All` permission:
-
-   ```powershell
-   Connect-MSIntuneGraph -TenantID contoso.onmicrosoft.com -ClientId "<appId>" -ClientSecret <secret>
-   ```
+   See [Authentication](#authentication) for interactive and non-interactive examples. Both require the client ID from your own Entra ID app registration.
 
 3. **Ensure the IntuneWin32App module is available and a valid Microsoft Graph API access token is present.**
 
 ## Authentication
 
+As of IntuneWin32App version 1.5.0, `Connect-MSIntuneGraph` requires the client ID from your own Entra ID app registration for all authentication flows.
+
+### Interactive Authentication
+
+Interactive delegated authentication is the default. Provide your app registration's client ID; the command opens a browser for sign-in:
+
+```powershell
+Connect-MSIntuneGraph -TenantID contoso.onmicrosoft.com -ClientId "<appId>"
+```
+
 ### Non-interactive Authentication
 
-An Entra ID app registration can be used for non-interactive authentication. The app registration requires the **DeviceManagementApps.ReadWrite.All** application permission. Create an app registration, assign the permission and enable admin consent. Then use a client secret or client certificate to use with authentication.
+For non-interactive authentication, configure an Entra ID app registration with the **DeviceManagementApps.ReadWrite.All** application permission and grant admin consent. Then authenticate with the app registration's client ID and a client secret or certificate.
 
 ![Entra ID app registration for IntuneWin32App](/images/appregistration.jpeg)
 
-For a non-interactive sign-in that uses the app registration and a client secret, use this example:
+For example, to sign in with a client secret:
 
 ```powershell
-Connect-MSIntuneGraph -TenantID contoso.onmicrosoft.com -ClientId "f99877d5-f757-438e-b12b-d905b00ea6f3" -ClientSecret <secret>
+Connect-MSIntuneGraph -TenantID contoso.onmicrosoft.com -ClientId "<appId>" -ClientSecret "<client-secret>"
 ```

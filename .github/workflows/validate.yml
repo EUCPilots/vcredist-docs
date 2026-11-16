@@ -9,6 +9,7 @@ on:
       - 'package-lock.json'
       - '.markdownlint-cli2.jsonc'
       - '.github/workflows/validate.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read

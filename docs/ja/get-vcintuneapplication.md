@@ -32,7 +32,8 @@ $Apps | Format-Table displayName, Id
 
 ## 出力
 
-返された配列の各オブジェクトには、次のようなプロパティが含まれます。
+返された配列の各オブジェクトには、次のようなプロパティが含まれます
+
 - `displayName`: Intune でのアプリケーションの表示名
 - `Id`: Intune アプリケーション ID
 - その他、`Get-VcRedistAppsFromIntune` が返すプロパティ

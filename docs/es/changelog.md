@@ -136,12 +136,12 @@
 * <Badge type="danger" text="Cambio importante" /> Actualiza `Install-VcRedist`, `Import-VcConfigMgrApplication`, `Import-VcMdtApplication` e `Import-VcIntuneApplication` para que usen el resultado de `Save-VcRedist`, eliminando la necesidad del parámetro `-Path` [#123](https://github.com/aaronparker/vcredist/discussions/123)
 * <Badge type="danger" text="Cambio importante" /> Quita del manifiesto los siguientes Redistributables porque Microsoft ya no los ofrece para descargar [#114](https://github.com/aaronparker/vcredist/issues/114):
 
-    * Visual C++ 2005 SP1 Redistributable Package 8.0.56336
-    * Visual C++ 2005 SP1 Redistributable Package 8.0.50727.42
-    * Visual C++ 2008 Redistributable Package 9.0.21022
-    * Visual C++ 2008 Redistributable Package 9.0.21022.218
-    * Visual C++ 2008 Redistributable Package 9.0.30729
-    * Visual C++ 2008 Redistributable Package 9.0.21022
+  * Visual C++ 2005 SP1 Redistributable Package 8.0.56336
+  * Visual C++ 2005 SP1 Redistributable Package 8.0.50727.42
+  * Visual C++ 2008 Redistributable Package 9.0.21022
+  * Visual C++ 2008 Redistributable Package 9.0.21022.218
+  * Visual C++ 2008 Redistributable Package 9.0.30729
+  * Visual C++ 2008 Redistributable Package 9.0.21022
 
 ## 4.0.461
 

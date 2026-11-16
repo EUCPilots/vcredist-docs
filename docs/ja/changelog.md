@@ -136,12 +136,12 @@
 * <Badge type="danger" text="破壊的変更" /> `Install-VcRedist`、`Import-VcConfigMgrApplication`、`Import-VcMdtApplication`、`Import-VcIntuneApplication` を更新し、`Save-VcRedist` の出力を使用するように変更。これにより `-Path` パラメーターが不要に [#123](https://github.com/aaronparker/vcredist/discussions/123)
 * <Badge type="danger" text="破壊的変更" /> Microsoft からダウンロードできなくなったため、次の再頒布可能パッケージをマニフェストから削除 [#114](https://github.com/aaronparker/vcredist/issues/114):
 
-    * Visual C++ 2005 SP1 Redistributable Package 8.0.56336
-    * Visual C++ 2005 SP1 Redistributable Package 8.0.50727.42
-    * Visual C++ 2008 Redistributable Package 9.0.21022
-    * Visual C++ 2008 Redistributable Package 9.0.21022.218
-    * Visual C++ 2008 Redistributable Package 9.0.30729
-    * Visual C++ 2008 Redistributable Package 9.0.21022
+  * Visual C++ 2005 SP1 Redistributable Package 8.0.56336
+  * Visual C++ 2005 SP1 Redistributable Package 8.0.50727.42
+  * Visual C++ 2008 Redistributable Package 9.0.21022
+  * Visual C++ 2008 Redistributable Package 9.0.21022.218
+  * Visual C++ 2008 Redistributable Package 9.0.30729
+  * Visual C++ 2008 Redistributable Package 9.0.21022
 
 ## 4.0.461
 

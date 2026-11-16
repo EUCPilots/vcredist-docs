@@ -32,7 +32,8 @@ $Apps | Format-Table displayName, Id
 
 ## Sortie
 
-Chaque objet du tableau retourné comprend des propriétés telles que :
+Chaque objet du tableau retourné comprend des propriétés telles que:
+
 - `displayName` : nom affiché de l'application dans Intune
 - `Id` : ID de l'application Intune
 - D'autres propriétés retournées par `Get-VcRedistAppsFromIntune`

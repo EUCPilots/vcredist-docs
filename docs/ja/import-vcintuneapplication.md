@@ -3,6 +3,7 @@
 `Import-VcIntuneApplication` は、Visual C++ 再頒布可能パッケージを Win32 アプリとしてパッケージ化し、Microsoft Intune にインポートする処理を自動化します。各再頒布可能パッケージは個別にパッケージ化され、検出規則と要件規則が割り当てられたアプリケーションとしてインポートされます。
 
 **主な機能:**
+
 - 各 Visual C++ 再頒布可能パッケージを .intunewin ファイルとしてパッケージ化します。
 - アプリケーションのプロパティ (名前、説明、発行元、バージョン、URL、メモ、ロゴ、インストール/アンインストール コマンド、インストール動作、OS アーキテクチャ、最小 OS、検出規則、要件規則) を設定します。
 - Intune に同じアプリがすでに存在し、最新の場合はインポートをスキップします。
@@ -11,6 +12,7 @@
 - x86、x64、ARM64 パッケージに対するアーキテクチャ固有の要件規則をサポートします。
 
 > **注:**
+>
 > - [IntuneWin32App](https://github.com/MSEndpointMgr/IntuneWin32App) PowerShell モジュールが必要です。
 > - Windows PowerShell 5.1 が必要です。必須の IntuneWin32App モジュールは PowerShell 7 をサポートしていません。
 > - 使用前に `Connect-MSIntuneGraph` で Intune に認証してください。

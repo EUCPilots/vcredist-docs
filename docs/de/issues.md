@@ -18,7 +18,7 @@ Visual C++ Redistributable 2008 `9.0.30729.7523` ist verfügbar, allerdings nur 
 
 ::: info
 Die folgenden Visual C++ Redistributables sind nicht mehr zum Download verfügbar, aber weiterhin im VcRedist-Manifest enthalten:
- 
+
 * Visual C++ 2005 Redistributable Package, Version `8.0.50727.42`
 * Visual C++ 2005 SP1 Redistributable Package, Version `8.0.56336`
 * Visual C++ 2008 SP1 Redistributable Package, Version `9.0.30729`

@@ -18,7 +18,7 @@ Le redistribuable Visual C++ 2008 `9.0.30729.7523` est disponible, mais uniqueme
 
 ::: info
 Les redistribuables Visual C++ suivants ne sont plus disponibles au téléchargement, mais figurent toujours dans le manifeste VcRedist :
- 
+
 * Visual C++ 2005 Redistributable Package, version `8.0.50727.42`
 * Visual C++ 2005 SP1 Redistributable Package, version `8.0.56336`
 * Visual C++ 2008 SP1 Redistributable Package, version `9.0.30729`

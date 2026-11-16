@@ -56,7 +56,7 @@
 
 * Corrige le mécanisme de secours de détection de l'architecture du redistribuable `x64`
 * Ajoute un mécanisme de secours de détection de l'architecture du redistribuable `ARM64`
-  
+
 ## 4.1.522
 
 * Met à jour VcRedist `2022` vers `14.44.35211.0`

@@ -3,6 +3,7 @@
 `Import-VcIntuneApplication` automates packaging and importing Visual C++ Redistributables as Win32 applications into Microsoft Intune. Each redistributable is packaged, assigned detection and requirement rules, and imported as a separate application.
 
 **Key features:**
+
 - Packages each Visual C++ Redistributable as a .intunewin file
 - Sets application properties: Name, Description, Publisher, Version, URLs, Notes, Logo, Install/Uninstall commands, Install behavior, OS architecture, minimum OS, detection and requirement rules
 - Skips import if the app already exists and is up-to-date in Intune
@@ -11,6 +12,7 @@
 - Supports architecture-specific requirement rules for x86, x64, and ARM64 packages
 
 > **Note:**
+>
 > - Requires the [IntuneWin32App](https://github.com/MSEndpointMgr/IntuneWin32App) PowerShell module
 > - Requires Windows PowerShell 5.1; PowerShell 7 is not supported by the required IntuneWin32App module
 > - Authenticate to Intune with `Connect-MSIntuneGraph` before use

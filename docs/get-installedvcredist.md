@@ -7,8 +7,8 @@ Running the `Get-InstalledVcRedist` command returns the list of installed Redist
 ```powershell
 Publisher            : Microsoft Corporation
 Name                 : Visual C++ v14 Redistributable (x86)
-Version              : 14.50.35719.0
-ProductCode          : {0e4ccf1b-d073-4cfe-8a24-e86185719b56}
+Version              : 14.52.37029.0
+ProductCode          : {a88f8d56-9d66-4c09-a714-3c6d83981361}
 BundleCachePath      : C:\ProgramData\Package Cache\{0e4ccf1b-d073-4cfe-8a24-e86185719b56}\vc_redist.x86.exe
 Architecture         : x86
 Release              : 14
@@ -18,8 +18,8 @@ UninstallKey         : HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersi
 
 Publisher            : Microsoft Corporation
 Name                 : Visual C++ v14 Redistributable (Arm64)
-Version              : 14.50.35719.0
-ProductCode          : {a111f0a4-679e-43e6-bdfe-25e176541c72}
+Version              : 14.52.37029.0
+ProductCode          : {f3c64e2f-0e60-4973-bfbb-bde56fc107e1}
 BundleCachePath      : C:\ProgramData\Package Cache\{a111f0a4-679e-43e6-bdfe-25e176541c72}\vc_redist.arm64.exe
 Architecture         : ARM64
 Release              : 14
@@ -29,8 +29,8 @@ UninstallKey         : HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersi
 
 Publisher            : Microsoft Corporation
 Name                 : Visual C++ v14 Redistributable (x64)
-Version              : 14.50.35719.0
-ProductCode          : {91ee571b-0e8a-4c65-9eaf-2e2f5fc60c00}
+Version              : 14.52.37029.0
+ProductCode          : {be2c4202-8de2-4274-95c7-ef71b2bfdcad}
 BundleCachePath      : C:\ProgramData\Package Cache\{91ee571b-0e8a-4c65-9eaf-2e2f5fc60c00}\vc_redist.x64.exe
 Architecture         : x64
 Release              : 14
@@ -43,7 +43,7 @@ UninstallKey         : HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersi
 
 ### Optional parameters
 
-* `ExportAll` - Export all installed Redistributables including the Additional and Minimum Runtimes typically hidden from Programs and Features
+* `Export` - `Supported` (default) returns Redistributable packages; `All` also includes Additional and Minimum Runtimes typically hidden from Programs and Features.
 
 ## Examples
 
@@ -61,8 +61,8 @@ Get-InstalledVcRedist | Select Name, Version, ProductCode
 
 ![Microsoft Visual C++ Redistributables installed on the local PC](/images/installed-vcredist.png)
 
-This list won't include the Additional and Minimum Runtimes by default. These can be returned with the `-ExportAll` switch:
+This list won't include the Additional and Minimum Runtimes by default. Include them with `-Export All`:
 
 ```powershell
-Get-InstalledVcRedist -ExportAll
+Get-InstalledVcRedist -Export All
 ```

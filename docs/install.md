@@ -4,6 +4,8 @@
 
 The VcRedist module is published to the PowerShell Gallery and can be found here: [VcRedist](https://www.powershellgallery.com/packages/VcRedist/). The module can be installed from the gallery with:
 
+VcRedist 5 requires PowerShell 5.1 or later.
+
 ```powershell
 Install-Module -Name VcRedist
 Import-Module -Name VcRedist
@@ -29,10 +31,10 @@ Common PowerShell module paths include:
 
 To install from the repository
 
-1. Download the `main branch` to your workstation.
+1. Download the `main` branch to your workstation.
 2. Copy the contents of the VcRedist folder onto your workstation into the desired PowerShell Module path.
 3. Open a Powershell console with the Run as Administrator option.
-4. Run `Set-ExecutionPolicy` using the parameter `RemoteSigned` or `Bypass`.
+4. If required by your environment, set an execution policy that allows the module scripts to run.
 
 Once installation is complete, you can validate that the module exists by running `Get-Module -ListAvailable VcRedist`. To use the module, load it with:
 

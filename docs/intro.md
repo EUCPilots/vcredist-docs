@@ -2,7 +2,7 @@
 
 VcRedist is a PowerShell module for lifecycle management of the [Microsoft Visual C++ Redistributables](https://learn.microsoft.com/en-au/cpp/windows/latest-supported-vc-redist).
 
-VcRedist downloads the supported (and unsupported) Redistributables, for local install, gold image deployment or importing as applications into the Microsoft Deployment Toolkit or Microsoft Configuration Manager, or other solutions including Microsoft Intune. VcRedist supports passive and silent installs, and uninstalls of the Visual C++ Redistributables.
+VcRedist downloads the supported and unsupported Redistributables for local installation, gold image deployment, or importing as applications into Microsoft Configuration Manager and Microsoft Intune. It supports passive and silent installs and uninstalls. The MDT integration remains available on a best-effort basis, but its commands are deprecated.
 
 ![PowerShell Gallery downloads](https://img.shields.io/powershellgallery/dt/vcredist.svg?style=flat&logo=powershell&logoColor=white&labelColor=7e56c2&color=009485)
 
@@ -12,37 +12,10 @@ The Microsoft Visual C++ Redistributables are a core component of any Windows de
 
 ## Supported vs. Unsupported Redistributables
 
-The module includes two manifests that list the supported Redistributables or all available Redistributables making it simple to download and deploy the Redistributes required for your environment.
+The module uses one manifest with a `Supported` flag on each entry. By default, `Get-VcList` returns supported Redistributables; use `-Export Unsupported` or `-Export All` to include entries Microsoft no longer supports.
 
 It is important to note that Microsoft no longer supports and provides security updates for certain Redistributables. The list of supported Redistributables is maintained here [Microsoft Visual C++ Redistributables](https://learn.microsoft.com/en-au/cpp/windows/latest-supported-vc-redist). Deployment of unsupported Redistributables should be done at your own risk.
 
-## Unsupported Redistributables
+## Manifest source
 
-As at November 2021, the unsupported list of Redistributables includes the following versions:
-
-| Name                                                                       | Version        |
-| -------------------------------------------------------------------------- | -------------- |
-| Visual C++ 2008 Service Pack 1 Redistributable Package MFC Security Update | 9.0.30729.6161 |
-| Visual C++ 2008 Service Pack 1 Redistributable Package MFC Security Update | 9.0.30729.6161 |
-| Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update | 8.0.61000      |
-| Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update | 8.0.59192      |
-| Visual C++ 2005 SP1 Redistributable Package                                | 8.0.56336      |
-| Visual C++ 2005 Redistributable Package                                    | 8.0.50727.42   |
-| Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update | 8.0.61000      |
-| Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update | 8.0.59192      |
-| Visual C++ 2005 SP1 Redistributable Package                                | 8.0.56336      |
-| Visual C++ 2005 Redistributable Package                                    | 8.0.50727.42   |
-| Visual C++ 2008 Redistributable Package                                    | 9.0.21022      |
-| Visual C++ 2008 Feature Pack Redistributable Package                       | 9.0.21022.218  |
-| Visual C++ 2008 Redistributable Package ATL Security Update                | 9.0.30411      |
-| Visual C++ 2008 SP1 Redistributable Package                                | 9.0.30729      |
-| Visual C++ 2008 Service Pack 1 Redistributable Package ATL Security Update | 9.0.30729.4148 |
-| Visual C++ 2008 Redistributable Package                                    | 9.0.21022      |
-| Visual C++ 2008 Feature Pack Redistributable Package                       | 9.0.21022.218  |
-| Visual C++ 2008 Redistributable Package ATL Security Update                | 9.0.30411      |
-| Visual C++ 2008 SP1 Redistributable Package                                | 9.0.30729      |
-| Visual C++ 2008 Service Pack 1 Redistributable Package ATL Security Update | 9.0.30729.4148 |
-| Visual C++ 2010 Service Pack 1 Redistributable Package MFC Security Update | 10.0.40219.325 |
-| Visual C++ 2010 Service Pack 1 Redistributable Package MFC Security Update | 10.0.40219.325 |
-| Visual C++ Redistributable Packages for Visual Studio 2013                 | 12.0.30501.0   |
-| Visual C++ Redistributable Packages for Visual Studio 2013                 | 12.0.30501.0   |
+`Get-VcList` uses the latest manifest available from the VcRedist repository by default and falls back to the bundled copy if the remote manifest cannot be used or is older. Use `-Source Remote` to require the remote manifest or `-Source Bundled` to avoid a network request. Module version 4 no longer receives manifest updates; update to VcRedist 5 to receive current manifest data.

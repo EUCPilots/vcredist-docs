@@ -1,31 +1,34 @@
 # Download the Redistributables
 
-To download the Visual C++ Redistributables to a local folder, use `Save-VcRedist`. This will read the array of Visual C++ Redistributables returned from `Get-VcList` and download each one to a local folder specified in `-Path`. Use the `-Release` or `-Architecture` parameters in `Get-VcList` to filter for specific Visual C++ Redistributables.
+To download Visual C++ Redistributables, pipe entries from `Get-VcList` to `Save-VcRedist`. The target folder is created if needed. Installers are stored under `Release\Version\Architecture`; existing valid installers are reused.
 
-Save-VcRedist downloads the Redistributables and returns the array passed from Get-VcList to the pipeline so that it can be passed to `Install-VcRedist`, `Import-VcMdtApplication`, `Update-VcMdtApplication`, `Import-VcConfigMgrApplication` and `Update-VcConfigMgrApplication`.
+Downloads must use HTTPS and an allowed Microsoft download host. By default, each installer (including an existing installer) must have a valid Microsoft Authenticode signature. The command returns each entry with its installer `Path` for use with `Install-VcRedist` or a deployment import function.
 
 ::: info
-Save-VcRedist will download the Visual C++ Redistributables the first time it runs against a specified path. Subsequent runs using the same path will use the existing downloaded Redistributables - the installers will not be re-downloaded.
+An existing installer is reused when its file version is at least as recent as the manifest version; its signature is still checked.
 :::
 
 ## Parameters
 
 ### Required parameters
 
-* `VcList` - An array containing details of the Visual C++ Redistributables from `Get-VcList`
-* `Path` - A folder to downloaded Visual C++ Redistributables into
+* `VcList` - Entries from `Get-VcList`
 
 ### Optional parameters
 
+* `Path` - Destination folder; defaults to the current directory
 * `Proxy` - Specify a proxy server to use when downloading the Visual C++ Redistributables
 * `ProxyCredential` - If the proxy server requires authentication, credentials can be specified as an PSCredential object
+* `ShowProgress` - Display download progress
+* `UserAgent` - Set the request user agent
+* `SkipAuthenticodeValidation` - Skip signature checks. Use only when you have an explicit reason to bypass validation.
+* `WhatIf` - Preview directory creation and downloads without making changes.
 
 ## Examples
 
 To download the default list of Redistributables to `C:\Temp\VcRedist`, use the following command:
 
 ```powershell
-New-Item -Path C:\Temp\VcRedist -ItemType Directory
 Get-VcList | Save-VcRedist -Path C:\Temp\VcRedist
 ```
 

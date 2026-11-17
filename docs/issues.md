@@ -9,6 +9,14 @@
 :::
 
 ::: info
+`Import-VcIntuneApplication` may report the following error when querying Intune or importing an app package into Intune.
+
+This is an issue with the **IntuneWin32App**. As a work around, set the local system to **English (United States**) and restart the PowerShell session.
+
+> Test-AccessToken : Exception calling "Parse" with "3" argument(s): "String was not recognized as a valid DateTime."
+:::
+
+::: info
 Visual C++ Redistributable 2012 Update 5 is available. This update is available on the Visual Studio download site, but requires a login to download. The [Visual Studio public downloads page](https://visualstudio.microsoft.com/vs/older-downloads/) still offers Update 4, so that is the version provided by VcRedist.
 :::
 
@@ -18,7 +26,7 @@ Visual C++ Redistributable 2008 `9.0.30729.7523` is available; however, only [as
 
 ::: info
 The following Visual C++ Redistributables are no longer available for download; however, they are still included in the VcRedist manifest:
- 
+
 * Visual C++ 2005 Redistributable Package, version `8.0.50727.42`
 * Visual C++ 2005 SP1 Redistributable Package, version `8.0.56336`
 * Visual C++ 2008 SP1 Redistributable Package, version `9.0.30729`

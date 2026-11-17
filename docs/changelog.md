@@ -57,7 +57,7 @@
 
 * Fixes `x64` Redistributable Architecture detection fallback
 * Adds `ARM64` Redistributable Architecture detection fallback
-  
+
 ## 4.1.522
 
 * Update VcRedist `2022` to `14.44.35211.0`
@@ -120,7 +120,7 @@
 ## 4.1.494
 
 * Fix an issue where Redistributables imported into MDT do not install
-* Fix an issue when importing the Redistributables into an MDT deployment share 
+* Fix an issue when importing the Redistributables into an MDT deployment share
 * Update Redistributables `2019` to `14.29.30153.0`
 * Update Redistributables `2022` to `14.38.33130.0`
 
@@ -137,12 +137,12 @@
 * <Badge type="danger" text="Breaking change" /> Updates `Install-VcRedist`, `Import-VcConfigMgrApplication`, `Import-VcMdtApplication`, and `Import-VcIntuneApplication` to use the output from `Save-VcRedist`, removing the need for the `-Path` parameter [#123](https://github.com/aaronparker/vcredist/discussions/123)
 * <Badge type="danger" text="Breaking change" /> Removes the following Redistributables from the manifest as they are no longer available for download from Microsoft [#114](https://github.com/aaronparker/vcredist/issues/114):
 
-    * Visual C++ 2005 SP1 Redistributable Package 8.0.56336
-    * Visual C++ 2005 SP1 Redistributable Package 8.0.50727.42
-    * Visual C++ 2008 Redistributable Package 9.0.21022
-    * Visual C++ 2008 Redistributable Package 9.0.21022.218
-    * Visual C++ 2008 Redistributable Package 9.0.30729
-    * Visual C++ 2008 Redistributable Package 9.0.21022
+  * Visual C++ 2005 SP1 Redistributable Package 8.0.56336
+  * Visual C++ 2005 SP1 Redistributable Package 8.0.50727.42
+  * Visual C++ 2008 Redistributable Package 9.0.21022
+  * Visual C++ 2008 Redistributable Package 9.0.21022.218
+  * Visual C++ 2008 Redistributable Package 9.0.30729
+  * Visual C++ 2008 Redistributable Package 9.0.21022
 
 ## 4.0.461
 

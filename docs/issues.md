@@ -9,6 +9,14 @@
 :::
 
 ::: info
+`Import-VcIntuneApplication` may report the following error when querying Intune or importing an app package into Intune.
+
+This is an issue with the **IntuneWin32App**. As a work around, set the local system to **English (United States**) and restart the PowerShell session.
+
+> Test-AccessToken : Exception calling "Parse" with "3" argument(s): "String was not recognized as a valid DateTime."
+:::
+
+::: info
 Visual C++ Redistributable 2012 Update 5 is available. This update is available on the Visual Studio download site, but requires a login to download. The [Visual Studio public downloads page](https://visualstudio.microsoft.com/vs/older-downloads/) still offers Update 4, so that is the version provided by VcRedist.
 :::
 

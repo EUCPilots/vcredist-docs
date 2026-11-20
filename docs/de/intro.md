@@ -12,7 +12,7 @@ Die Microsoft Visual C++ Redistributables sind eine Kernkomponente jeder Windows
 
 ## Unterstützte und nicht unterstützte Redistributables
 
-Das Modul verwendet ein Manifest mit einem `Supported`-Flag für jeden Eintrag. Standardmäßig gibt `Get-VcList` unterstützte Redistributables zurück. Verwenden Sie `-Export Unsupported` oder `-Export All`, um Einträge einzuschließen, die von Microsoft nicht mehr unterstützt werden.
+Das Modul verwendet ein Manifest mit einem `Supported`-Flag für jeden Eintrag. Die Standardabfrage von `Get-VcList` gibt Einträge für Version `14` zurück. Verwenden Sie `-Export Supported`, um nur unterstützte Einträge aller Versionen abzurufen, oder `-Export Unsupported` und `-Export All`, um Einträge einzuschließen, die von Microsoft nicht mehr unterstützt werden. Die direkte Auswahl einer Version kann ebenfalls nicht unterstützte Einträge zurückgeben und gibt dann eine Warnung aus.
 
 Beachten Sie, dass Microsoft bestimmte Redistributables nicht mehr unterstützt und dafür keine Sicherheitsupdates bereitstellt. Die Liste der unterstützten Redistributables wird hier gepflegt: [Microsoft Visual C++ Redistributables](https://learn.microsoft.com/en-au/cpp/windows/latest-supported-vc-redist). Die Bereitstellung nicht unterstützter Redistributables erfolgt auf eigenes Risiko.
 

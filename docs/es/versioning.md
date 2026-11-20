@@ -1,6 +1,6 @@
 # Control de versiones de VcRedist
 
-VcRedist usa el esquema de versiones `major.minor.patch[-prerelease]`. La versión 5 introduce cambios importantes; las versiones beta, como `5.0.4-beta5`, identifican compilaciones preliminares.
+VcRedist usa el esquema de versiones `major.minor.patch[-prerelease]`. La versión 5 introduce cambios importantes; las versiones preliminares, como `5.0.6-rc2`, identifican compilaciones que aún no son estables.
 
 ## Versión principal
 

@@ -1,6 +1,6 @@
 # Redistribuables inclus
 
-VcRedist <Badge type="tip" text="5.0.4-beta5" /> comprend les redistribuables suivants (pris en charge et non pris en charge). Le manifeste fourni avec le module a été mis à jour le 2026-11-15 ; des données plus récentes peuvent être disponibles dans le manifeste distant.
+VcRedist <Badge type="tip" text="5.0.6-rc2" /> comprend les redistribuables suivants (pris en charge et non pris en charge). Le manifeste fourni avec le module a été mis à jour le 2026-11-15 ; des données plus récentes peuvent être disponibles dans le manifeste distant.
 
 ## Redistribuables pris en charge
 

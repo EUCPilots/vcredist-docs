@@ -1,6 +1,6 @@
 # Enthaltene Redistributables
 
-VcRedist <Badge type="tip" text="5.0.4-beta5" /> enthält die folgenden Redistributables (unterstützt und nicht unterstützt). Das mitgelieferte Manifest wurde am 2026-11-15 aktualisiert; möglicherweise sind neuere Remotemanifestdaten verfügbar.
+VcRedist <Badge type="tip" text="5.0.6-rc2" /> enthält die folgenden Redistributables (unterstützt und nicht unterstützt). Das mitgelieferte Manifest wurde am 2026-11-15 aktualisiert; möglicherweise sind neuere Remotemanifestdaten verfügbar.
 
 ## Unterstützte Redistributables
 

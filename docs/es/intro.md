@@ -12,7 +12,7 @@ Los Redistributables de Microsoft Visual C++ son un componente esencial de cualq
 
 ## Redistributables compatibles y no compatibles
 
-El módulo usa un manifiesto con una marca `Supported` para cada entrada. De forma predeterminada, `Get-VcList` devuelve los Redistributables compatibles; use `-Export Unsupported` o `-Export All` para incluir las entradas que Microsoft ya no admite.
+El módulo usa un manifiesto con una marca `Supported` para cada entrada. De forma predeterminada, `Get-VcList` devuelve la versión `14`; use `-Export Supported` para obtener solo las entradas compatibles de todas las versiones, o `-Export Unsupported` y `-Export All` para incluir las entradas que Microsoft ya no admite. La selección directa por versión y arquitectura también puede devolver entradas no compatibles y muestra una advertencia.
 
 Es importante tener en cuenta que Microsoft ya no admite ciertos Redistributables ni proporciona actualizaciones de seguridad para ellos. La lista de Redistributables compatibles se mantiene aquí: [Redistributables de Microsoft Visual C++](https://learn.microsoft.com/en-au/cpp/windows/latest-supported-vc-redist). La implementación de Redistributables no compatibles se realiza bajo su propia responsabilidad.
 

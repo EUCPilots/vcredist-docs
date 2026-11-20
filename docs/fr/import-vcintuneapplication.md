@@ -21,7 +21,7 @@
 ## Paramètres
 
 - `VcList` (**obligatoire**) : tableau d'objets Redistributable Visual C++, généralement obtenus avec `Save-VcRedist`. Chaque objet doit comporter les propriétés requises (voir ci-dessous).
-- `ImportAsUpdate` : ajoute une exigence de version de fichier afin qu'un environnement d'exécution plus ancien déjà installé ne satisfasse pas l'exigence d'un package plus récent.
+- `ImportAsUpdate` : importe une application de mise à jour distincte pour chaque redistribuable, en préfixant son nom d'affichage par `Update for`, et ajoute une exigence de version de fichier afin qu'un environnement d'exécution plus ancien déjà installé ne satisfasse pas l'exigence de la mise à jour.
 - `WhatIf` : prévisualise les importations sans créer ni modifier d'applications Intune.
 
 ## Propriétés obligatoires de VcList

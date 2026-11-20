@@ -12,7 +12,7 @@ Microsoft Visual C++ 再頒布可能パッケージは、物理 PC や仮想デ�
 
 ## サポート対象とサポート対象外の再頒布可能パッケージ
 
-このモジュールでは、各エントリに `Supported` フラグを持つ単一のマニフェストを使用します。既定では `Get-VcList` はサポート対象の再頒布可能パッケージを返します。Microsoft がサポートを終了したエントリも含めるには、`-Export Unsupported` または `-Export All` を使用します。
+このモジュールでは、各エントリに `Supported` フラグを持つ単一のマニフェストを使用します。既定の `Get-VcList` クエリはリリース `14` を返します。全リリースのサポート対象エントリのみを取得するには `-Export Supported` を使用し、Microsoft がサポートを終了したエントリを含めるには `-Export Unsupported` または `-Export All` を使用します。リリースを直接選択した場合も、サポート対象外のエントリが返されることがあり、その際は警告が表示されます。
 
 Microsoft が一部の再頒布可能パッケージのサポートとセキュリティ更新プログラムの提供を終了している点に注意してください。サポート対象の再頒布可能パッケージの一覧は、こちらの [Microsoft Visual C++ 再頒布可能パッケージ](https://learn.microsoft.com/en-au/cpp/windows/latest-supported-vc-redist)で管理されています。サポート対象外の再頒布可能パッケージの展開は、自己責任で行ってください。
 

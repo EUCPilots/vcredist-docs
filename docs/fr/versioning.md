@@ -1,6 +1,6 @@
 # Comprendre la gestion des versions de VcRedist
 
-VcRedist utilise une gestion des versions au format `major.minor.patch[-prerelease]`. La version 5 introduit des changements incompatibles ; les versions bêta, telles que `5.0.4-beta5`, désignent des versions préliminaires.
+VcRedist utilise une gestion des versions au format `major.minor.patch[-prerelease]`. La version 5 introduit des changements incompatibles ; les versions préliminaires, telles que `5.0.6-rc2`, désignent des versions qui ne sont pas encore stables.
 
 ## Version majeure
 

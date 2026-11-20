@@ -12,7 +12,7 @@ Les redistribuables Microsoft Visual C++ sont un composant essentiel de tout dé
 
 ## Redistribuables pris en charge ou non pris en charge
 
-Le module utilise un seul manifeste dont chaque entrée comporte un indicateur `Supported`. Par défaut, `Get-VcList` retourne les redistribuables pris en charge ; utilisez `-Export Unsupported` ou `-Export All` pour inclure les entrées que Microsoft ne prend plus en charge.
+Le module utilise un seul manifeste dont chaque entrée comporte un indicateur `Supported`. Par défaut, la requête `Get-VcList` retourne la version `14` ; utilisez `-Export Supported` pour obtenir uniquement les redistribuables pris en charge, toutes versions confondues, ou `-Export Unsupported` et `-Export All` pour inclure les entrées que Microsoft ne prend plus en charge. Une sélection directe avec `-Release` ou `-Architecture` peut également retourner des entrées non prises en charge et génère un avertissement.
 
 Notez que Microsoft ne prend plus en charge certains redistribuables et ne leur fournit plus de mises à jour de sécurité. La liste des redistribuables pris en charge est tenue à jour ici : [Redistribuables Microsoft Visual C++](https://learn.microsoft.com/en-au/cpp/windows/latest-supported-vc-redist). Le déploiement de redistribuables non pris en charge se fait à vos risques.
 

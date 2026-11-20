@@ -1,6 +1,6 @@
 # VcRedist-Versionierung verstehen
 
-VcRedist verwendet die Versionierung `major.minor.patch[-prerelease]`. Version 5 führt inkompatible Änderungen ein; Betaversionen wie `5.0.4-beta5` kennzeichnen Vorabversionen.
+VcRedist verwendet die Versionierung `major.minor.patch[-prerelease]`. Version 5 führt inkompatible Änderungen ein; Vorabversionen wie `5.0.6-rc2` kennzeichnen noch nicht stabile Builds.
 
 ## Hauptversion
 

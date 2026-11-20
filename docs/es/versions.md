@@ -1,6 +1,6 @@
 # Redistributables incluidos
 
-VcRedist <Badge type="tip" text="5.0.4-beta5" /> incluye los siguientes Redistributables (compatibles y no compatibles). El manifiesto incluido se actualizó el 2026-11-15; puede haber datos más recientes en el manifiesto remoto.
+VcRedist <Badge type="tip" text="5.0.6-rc2" /> incluye los siguientes Redistributables (compatibles y no compatibles). El manifiesto incluido se actualizó el 2026-11-15; puede haber datos más recientes en el manifiesto remoto.
 
 ## Redistributables compatibles
 

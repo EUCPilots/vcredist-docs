@@ -8,14 +8,14 @@ Verwenden Sie `Uninstall-VcRedist`, um die Visual C++ Redistributables auf dem l
 
 ### Erforderliche Parameter
 
-Keine. Ohne Filter wählt der Befehl installierte Redistributables aus allen Versionen sowie für die Architekturen x86 und x64 aus. Vor der Deinstallation wird standardmäßig eine Bestätigung angefordert.
+Keine. Ohne Filter wählt der Befehl installierte Redistributables aus allen Versionen (einschließlich `2022`) sowie für die Architekturen x86 und x64 aus. ARM64 ist mit `-Architecture ARM64` verfügbar, wird jedoch nicht standardmäßig ausgewählt. Vor der Deinstallation wird standardmäßig eine Bestätigung angefordert.
 
 ### Optionale Parameter
 
 * `Confirm` – Steuert die PowerShell-Bestätigungsaufforderung. `-Confirm:$false` unterdrückt sie.
 * `Release` – Gibt die Version der zu deinstallierenden Redistributables an (z. B. `14`, `2019`, `2012` usw.).
 * `Architecture` – Gibt die zu deinstallierende Architektur an: `x86`, `x64` oder `ARM64`. Standardmäßig werden x86 und x64 ausgewählt.
-* `VcList` – Akzeptiert Manifesteinträge aus der Pipeline, um bestimmte Redistributables zur Deinstallation auszuwählen.
+* `VcList` – Akzeptiert Einträge aus `Get-VcList` oder `Get-InstalledVcRedist` über die Pipeline, um bestimmte Redistributables auszuwählen.
 
 ## Beispiele
 
@@ -30,3 +30,11 @@ Mit diesem Befehl werden alle installierten Visual C++ Redistributables der Vers
 ```powershell
 Uninstall-VcRedist -Release 2008
 ```
+
+Ausgewählte installierte Einträge aus dem Bestand deinstallieren:
+
+```powershell
+Get-InstalledVcRedist | Where-Object Release -eq "14" | Uninstall-VcRedist
+```
+
+Der Befehl gibt für jedes ausgewählte Element ein Statusobjekt zurück. `State` ist `Uninstalled`, wenn die Deinstallation erfolgreich ist, `Not installed`, wenn das Produkt bereits nicht vorhanden war, und `Failed`, wenn das Deinstallationsprogramm nicht ausgeführt werden kann oder einen unerwarteten Exitcode zurückgibt. Wenn im manuellen Modus sowohl `-Release` als auch `-Architecture` explizit angegeben werden, werden auch fehlende Kombinationen mit `Not installed` zurückgegeben.

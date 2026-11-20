@@ -7,6 +7,8 @@
 
 ### Breaking changes
 
+<Badge type="danger" text="Breaking changes" />
+
 * Minimum PowerShell version is now 5.1; TLS 1.2 is enforced for web requests
 * The manifest is now a flat schema: `{ SchemaVersion, Updated, Entries[] }`, each entry has a `Supported` boolean
 * `Get-VcList -Export` filters by `Supported`, `Unsupported` or `All`; the default is `Supported`
@@ -15,6 +17,8 @@
 * Removes the exported `$VcManifest` variable
 
 ### New and improved
+
+<Badge type="tip" text="New and improved" />
 
 * The manifest is read from the repository and falls back to the bundled manifest on any failure; use `-Source Auto|Remote|Bundled`. The bundled manifest is used if the remote one is older
 * Adds manifest-defined install ordering, validates manifest release coverage, and preserves install order when exporting

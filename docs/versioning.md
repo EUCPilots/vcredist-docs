@@ -1,6 +1,6 @@
 # Understanding VcRedist Versioning
 
-VcRedist uses `major.minor.patch[-prerelease]` versioning. Version 5 introduces breaking changes; beta releases, such as `5.0.4-beta5`, identify prerelease builds.
+VcRedist uses `major.minor.patch[-prerelease]` versioning. Version 5 introduces breaking changes; prereleases, such as `5.0.6-rc2`, identify builds that are not yet stable.
 
 ## Major release
 

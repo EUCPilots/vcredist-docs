@@ -24,7 +24,7 @@ You should see output similar to the following:
 
 ```powershell
 Checking whether module is installed: VcRedist.
-Installing module: VcRedist 5.0.4-beta5.
+Installing module: VcRedist 5.0.6-rc2.
 Saving VcRedists to path: C:\Users\Aaron\AppData\Local\Temp\VcRedist.
 Downloading and installing supported Microsoft Visual C++ Redistributables.
 Installed Visual C++ Redistributables:

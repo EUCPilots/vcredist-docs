@@ -1,6 +1,6 @@
 # Included Redistributables
 
-VcRedist <Badge type="tip" text="5.0.4-beta5" /> includes the following Redistributables (supported and unsupported). The bundled manifest was updated on 2026-11-15; newer remote manifest data may be available.
+VcRedist <Badge type="tip" text="5.0.6-rc2" /> includes the following Redistributables (supported and unsupported). The bundled manifest was updated on 2026-11-15; newer remote manifest data may be available.
 
 ## Supported Redistributables
 

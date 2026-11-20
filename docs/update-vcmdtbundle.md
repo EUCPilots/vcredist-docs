@@ -1,5 +1,9 @@
 # Update the Redistributables bundle in MDT
 
+::: warning
+The MDT commands in VcRedist 5 are deprecated and may be removed in a future major release. Support is best-effort.
+:::
+
 Where the Visual C++ Redistributables bundle in an MDT deployment requires updating for the Visual C++ Redistributable applications that are currently in the share, `Update-VcMdtBundle` will scan the deployment share and replace any dependencies on the existing bundle with the current Visual C++ Redistributable applications.
 
 The Version property of the bundle is updated with the current date making it easy to see when the bundle was last updated.

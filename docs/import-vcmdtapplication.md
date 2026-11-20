@@ -4,6 +4,10 @@
 The Microsoft Deployment Toolkit is no longer supported by Microsoft. Any support for MDT by VcRedist will be on a best effort basis.
 :::
 
+::: warning
+The MDT commands in VcRedist 5 are deprecated and may be removed in a future major release.
+:::
+
 To install the Visual C++ Redistributables as a part of a reference image or for use with a deployment solution based on the Microsoft Deployment Toolkit (MDT), `Import-VcMdtApplication` will import each of the Visual C++ Redistributables as separate applications that includes the passive or silent command lines, platform support and the UninstallKey for detecting whether the Visual C++ Redistributable is already installed.
 
 Visual C++ Redistributables can be filtered for release and processor architecture by `Get-VcList` before passing to `Save-VcRedist` and `Import-VcMdtApplication`. The output from `Save-VcRedist` is required, because it includes the `Path` property that is populated with the path to each installer.

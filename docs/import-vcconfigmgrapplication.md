@@ -14,10 +14,12 @@ Visual C++ Redistributables can be filtered for release and processor architectu
 
 ### Optional parameters
 
-* `Silent` - Configures the MDT application quiet install command to be completely silent instead of using the default passive install command line
+* `Silent` - Uses the quiet install command instead of the default passive command
 * `AppFolder` - Imports the Visual C++ Redistributables into a sub-folder. Defaults to `VcRedists`
+* `NoCopy` - Do not copy downloaded installers to the specified content path.
 * `Publisher` - The publisher that will be assigned to the Visual C++ Redistributables application. Not required and defaults to `Microsoft`
 * `Keyword` - The keyword assigned to the Visual C++ Redistributables application. Not required and defaults to `Visual C++ Redistributables`
+* `WhatIf` - Preview ConfigMgr changes without applying them.
 * `Language` - The language assigned to the Visual C++ Redistributables application. Defaults to `en-US`
 
 ## Examples

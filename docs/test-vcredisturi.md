@@ -2,6 +2,8 @@
 
 `Test-VcRedistUri` validates the download URIs for the Visual C++ Redistributables by sending a HEAD request to each URI. Use this function to verify that download links are accessible before attempting to download with `Save-VcRedist`.
 
+Only HTTPS URLs on the module's allowed Microsoft download hosts are tested; other URLs are rejected.
+
 ## Parameters
 
 ### Required parameters
@@ -28,7 +30,7 @@ Example output:
 Result       : True
 Release      : 14
 Architecture : x64
-Version      : 14.50.35719.0
+Version      : 14.52.37029.0
 URI          : https://aka.ms/vc14/vc_redist.x64.exe
 ```
 

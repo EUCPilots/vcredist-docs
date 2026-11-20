@@ -33,6 +33,7 @@ $Apps | Format-Table displayName, Id
 ## Output
 
 Each object in the returned array includes properties such as:
+
 - `displayName`: The application's display name in Intune
 - `Id`: The Intune application ID
 - Other properties as returned by `Get-VcRedistAppsFromIntune`

@@ -1,5 +1,9 @@
 # Create a Redistributables bundle in MDT
 
+::: warning
+The MDT commands in VcRedist 5 are deprecated and may be removed in a future major release. Support is best-effort.
+:::
+
 Once the Visual C++ Redistributables have been imported into a MDT deployment share, they will be available as individual applications that can be added to a task sequence. To simplify selection of the Redistributables, they can be added to an application bundle. A bundle is an application in the MDT share that does not install applications itself, but includes other applications as dependencies. Thus a bundle can install a set of applications in a specific order using a single action in a task sequence.
 
 The Version property of the bundle is stamped with the current date making it easy to see when the bundle was created or last updated.

@@ -3,20 +3,26 @@
 `Import-VcIntuneApplication` automates packaging and importing Visual C++ Redistributables as Win32 applications into Microsoft Intune. Each redistributable is packaged, assigned detection and requirement rules, and imported as a separate application.
 
 **Key features:**
+
 - Packages each Visual C++ Redistributable as a .intunewin file
 - Sets application properties: Name, Description, Publisher, Version, URLs, Notes, Logo, Install/Uninstall commands, Install behavior, OS architecture, minimum OS, detection and requirement rules
 - Skips import if the app already exists and is up-to-date in Intune
 - Cleans up temporary files after import
+- Supports `-WhatIf` to preview imports
+- Supports architecture-specific requirement rules for x86, x64, and ARM64 packages
 
 > **Note:**
+>
 > - Requires the [IntuneWin32App](https://github.com/MSEndpointMgr/IntuneWin32App) PowerShell module
-> - Supported only on Windows PowerShell (not PowerShell Core)
+> - Requires Windows PowerShell 5.1; PowerShell 7 is not supported by the required IntuneWin32App module
 > - Authenticate to Intune with `Connect-MSIntuneGraph` before use
 > - Requires a valid Microsoft Graph API access token
 
 ## Parameters
 
 - `VcList` (**required**): An array of Visual C++ Redistributable objects, typically from `Save-VcRedist`. Each object must have required properties (see below).
+- `ImportAsUpdate`: Imports a separate update app for each Redistributable, prefixes its display name with `Update for`, and adds a file-version requirement so an older installed runtime does not satisfy the update.
+- `WhatIf`: Previews imports without creating or changing Intune apps.
 
 ## Required VcList Properties
 
@@ -33,6 +39,12 @@ The following example retrieves the list of Visual C++ Redistributables for the 
 ```powershell
 $VcList = Get-VcList -Release "14" | Save-VcRedist -Path C:\Temp\VcRedist
 Import-VcIntuneApplication -VcList $VcList
+```
+
+Use `-ImportAsUpdate` to add a requirement for the package's detection file version:
+
+```powershell
+Import-VcIntuneApplication -VcList $VcList -ImportAsUpdate
 ```
 
 ![Microsoft Visual C++ Redistributables applications imported into Intune](/images/intuneapp.jpeg)
